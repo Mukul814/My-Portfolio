@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+  display: inline-block;
+  background: seagreen;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1a1a1a;
+  color: #ccc;
+  padding: 20px 40px;
+}
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+.socials {
+  list-style: none;
+  display: flex;
+}
+.socials li {
+  margin-left: 12px;
+}
+.socials img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  transition: transform 0.2s;
+}
+.socials img:hover {
+  transform: scale(1.1);
+}
+
+body:not(.resume) {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('https://plus.unsplash.com/premium_photo-1681566925294-7ff6eba5a9c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')
+    no-repeat center center fixed;
+  background-size: cover;
+}
+
+.hero {
+  position: relative;
+  flex: 1;
+}
+
+.content {
+  position: absolute;
+  top: 59%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  max-width: 600px;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.content h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  color: #111;
+  margin-bottom: 0.2em;
+}
+
+.content h2 {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.content a {
+  color: seagreen;
+}
+
+body.resume {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('https://images.unsplash.com/photo-1581091870620-94189d9157c0?auto=format&fit=crop&w=2070&q=80')
+    no-repeat center center fixed;
+  background-size: cover;
+  padding-top: 60px;
+  padding-bottom: 0;
+}
+
+body.resume .download-link {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+}
+
+body.resume .resume-card {
+  position: relative;
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+body.resume .back-home {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: seagreen;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+body.resume .resume-header h1 {
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+  margin-bottom: 0.2em;
+}
+
+body.resume .resume-header h2 {
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+body.resume .resume-body section {
+  margin-bottom: 2em;
+}
+
+body.resume .resume-body h3 {
+  border-bottom: 2px solid seagreen;
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+}
+
+body.resume .resume-body ul {
+  list-style: disc inside;
+  margin-left: 1em;
+}
+
+body.resume .resume-body .education {
+  list-style: none;
+  padding-left: 0;
+}
+
+body.resume .resume-body .education li {
+  margin-bottom: 0.75em;
+}
+
+body.resume footer {
+  margin-top: auto;
+}
